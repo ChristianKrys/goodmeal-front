@@ -1,0 +1,95 @@
+.rigth_container_footer_form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 3rem;    
+    font-family: $secondary_font_family;
+    font-weight: none;
+    font-size: 1.2rem;
+    padding: 3rem 0rem;
+
+    span{
+        padding: 0.5rem;
+    }
+}
+.rigth_container_footer_form{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    align-content: center;
+}
+.rigth_container_footer_top{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rigth_container_footer_top_champ{
+    margin: 0rem 2rem;
+}
+.rigth_container_footer_top_champ_properties{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+}
+.footer_input{
+    display: flex;
+    align-items: center;
+    margin: 0rem 0.5rem 0.5rem 0rem;
+    background-color: #c8c8c8;
+
+    input,select{
+        background-color: transparent;
+        font-size: 1rem;
+        padding: 0.5rem 0;
+        border: none;
+        outline:none; 
+        width: 100%;       
+    }
+}
+.rigth_container_footer_top_champ_lien span{cursor: pointer;}
+
+.rigth_container_footer_top_description textarea{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid $secondary_color;
+}
+.btn_validation{    
+    cursor: pointer;    
+    font-size: 1.5rem;
+    background-color: $primary_color;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border: none;
+    &:hover{
+        background-color: #046109;
+    }
+}
+.rigth_container_footer_bottom{
+    margin-top: 2rem;
+}
+
+.cadrePhoto{    
+    padding-bottom: 0.5rem;   
+    img{        
+        width: 8rem;         
+        box-shadow: 4px 4px 4px 3px #777;                     
+    }
+}
+.rigth_container_footer_bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rigth_container_footer_bottom_message{
+    color: $primary_color;
+    margin-bottom: 1rem;
+}
+
+
+

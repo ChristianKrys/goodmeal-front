@@ -1,0 +1,67 @@
+
+.formId_fieldset{
+    width: 25%;
+    min-width: 300px;
+    margin: 5rem auto;
+    padding: 0 2.5rem;
+    border-radius: 0.5rem;
+    border: solid;
+}
+.formId_data{
+    display: flex;
+    flex-direction: column;    
+    align-content: center; 
+    width: 100%;
+    padding: 2rem 0;
+
+    input[type="text"],input[type="password"]{
+        width: 100%;
+        margin-bottom: 2rem ;
+        font-size: 1.2rem;
+        height: 2rem;
+        padding: 1rem 0.5rem;
+        border-radius: 0.5rem;
+    }
+    label{
+        font-size: 1.5rem;
+    }
+}
+.formId_frame_Btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+    align-content: center;
+    flex-wrap: wrap;   
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.formId_Btn_Submit,.formId_Btn_Fermer{
+    background-color: $primary_color; 
+    font-family: $secondary_font_family;
+    font-size: 1.5rem;
+    width: 10rem;
+    color: #fff;   
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.formId_Btn_Submit{
+    &:hover{
+        background-color: #046109;
+    }
+}
+.formId_Btn_Fermer{
+    &:hover{
+        background-color: red;
+    }
+}
+
+.formId_small{    
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: right;
+}

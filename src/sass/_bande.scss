@@ -1,0 +1,22 @@
+.lef_container_top,.lef_container_bottom{
+    width: 100%;
+    color: $primary_color;
+    background-color: rgba($black_background,0.9);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items: center;
+    padding: 0.5rem 3rem;
+}
+.lef_container_top span{
+    padding-left: 8rem;
+}
+.lef_container_bottom{
+    flex-direction: column;
+    justify-content: space-evenly;     
+}
+.lef_container_bottom_design_by{
+    color: #fff;
+    font-size: 1.5rem;
+}
