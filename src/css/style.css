@@ -606,7 +606,7 @@ body {
   width: 100%;
   padding: 2rem 0;
 }
-.formId_data input[type=text], .formId_data input[type=password] {
+.formId_data input[type=text], .formId_data input[type=password], .formId_data input[type=email] {
   width: 100%;
   margin-bottom: 2rem;
   font-size: 1.2rem;

@@ -67,7 +67,7 @@ const App = ()=>{
 
     //----- Serveur de donnees ---------
 //const db_Url ='http://localhost:8001/'
-//const db_Url = "http://localhost:3002/goodmeal-api/v1/";
+//const db_Url = "http://localhost:3005/goodmeal-api/v1/";
 const db_Url = "/goodmeal-api/v1/";   //-- lorsaqe le frontend est inseré directement dans le backend,
                                        // on peut ignorer l'adresse IP et le Port du serveur d'API (http://localhost:3002)
 //const db_Url = "https://goodmeal-api.onrender.com/goodmeal-api/v1/";
@@ -84,6 +84,7 @@ const db_Url = "/goodmeal-api/v1/";   //-- lorsaqe le frontend est inseré direc
         listeCommande : [],
         modeEnCours: 'client',
         authentificationEnCours: false,
+        creationCompteEnCours : false,
         urlServer : db_Url,
         baseDeDonnee : {...bd_goodmeal}
     }

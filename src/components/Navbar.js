@@ -39,7 +39,7 @@ const Navbar = () => {
     const handleauthentificationEnCours = ()=>{        
         if(utilisateurEnCours.typeCompteUtilisateur==="visiteur")
         {
-            setParamGlobal({...paramGlobal,authentificationEnCours:true});
+            setParamGlobal({...paramGlobal,authentificationEnCours:true,creationCompteEnCours:false});
         }else{
             
             const {bd_goodmeal,utilisateur,commande,emptyProduit,article} = model;
@@ -101,7 +101,9 @@ const Navbar = () => {
                         <div className="navbar_login_connexion_identifiant_btn_SeConnecter" onClick={handleauthentificationEnCours}>{deconnexion}</div>
                     </div>
                     <div className="navbar_login_connexion_avatar">                        
-                        <img src="images/logo_profil.png" alt="" />
+                        <img src="images/logo_profil.png" alt="" onClick={()=>{
+                                setParamGlobal({...paramGlobal,authentificationEnCours:true,creationCompteEnCours:true});
+                            }} />
                     </div>
                 </div>
 

@@ -10,8 +10,7 @@ const AffichePanier = () => {
     const {Coll_Produit,Coll_Utilisateur,Coll_Commande} = baseDeDonnee;
 
     const {bd_goodmeal,utilisateur,commande,emptyProduit,article} = model;
-
-
+    
     /*//////////***********
     const emptyProduit = {
         urlPhoto:'',
@@ -49,7 +48,7 @@ const AffichePanier = () => {
         setParamGlobal({...paramGlobal,commandeEnCours : {...commande}})
     }
 
-    function handleValiderCommande(commande){ 
+    function handleValiderCommande(commande){         
         const url = urlServer+Coll_Commande;//"Commande";          
         fetch(url,{
             method: 'POST',
@@ -80,7 +79,12 @@ const AffichePanier = () => {
             {tableArticle.map((article)=>{
                 return <Article key={article.produit._id} newArticle={article}/>                                
             })} 
-            {<div onClick={()=>{handleValiderCommande(commandeEnCours)}} className="lef_container_Btn_valider_commande">Valider la commande</div>}
+            {<div onClick={()=>{
+                        const commande = {...commandeEnCours,idClient : utilisateurEnCours._id};
+                        handleValiderCommande(commandeEnCours);
+                    }
+                } className="lef_container_Btn_valider_commande">Valider la commande</div>
+            }
             {<div onClick={handleViderPanier} className="lef_container_Btn_vider_panier">Vider le panier</div>}
         </div> 
      );
