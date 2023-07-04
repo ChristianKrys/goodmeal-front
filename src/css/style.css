@@ -16,6 +16,70 @@ body {
   min-width: 350px;
 }
 
+@media screen and (max-width: 1235px) {
+  .lef_container {
+    width: 100% !important;
+  }
+  .rigth_container {
+    width: 100%;
+  }
+}
+@media all and (max-width: 991px) {
+  .navbar_logo_image {
+    width: 3rem !important;
+    margin: 0 0.2rem;
+  }
+  .navbar_logo_titre {
+    font-size: 2.5rem;
+    padding-left: 0rem;
+  }
+  .navbar {
+    justify-content: space-evenly !important;
+  }
+  .lef_container_bottom {
+    padding: 0.3rem 0.5rem;
+  }
+  .lef_container_top span {
+    padding: 0rem !important;
+  }
+  .lef_container_top_lib, .lef_container_top_total {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .navbar_login {
+    justify-content: space-between;
+  }
+  .navbar_login_btn_admin_image, .navbar_login_connexion {
+    margin: 0.3rem !important;
+  }
+  #ajouter3, #modifier3, #lister3 {
+    display: none;
+  }
+  .footer_input input, .footer_input select {
+    width: 300px;
+  }
+  .rigth_container_footer_top_description textarea {
+    margin-top: 0.5rem;
+    width: 300px;
+  }
+}
+/*
+//------ Desktop ------
+@media screen and (min-width:1201px){}
+
+//------ Laptop ------
+@media all and (min-width:992px) and (max-width:1200px){}
+
+//------ Tablette ------
+@media all and (min-width:769px) and (max-width:991px){}
+
+//------ SmartPhone ------
+@media screen and (max-width:768px){}
+
+//------ Orientation ------
+@media screen and (orientation : portrait){}
+*/
 .app {
   width: 100%;
   display: flex;
@@ -82,32 +146,6 @@ body {
   background-color: red;
 }
 
-@media screen and (max-width: 1250px) {
-  .lef_container {
-    width: 100%;
-  }
-  .rigth_container {
-    width: 100%;
-  }
-  .navbar_login {
-    margin-left: 0.5rem;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .navbar_login_btn_admin_image, .navbar_login_connexion {
-    margin: 0.3rem !important;
-  }
-  #ajouter3, #modifier3, #lister3 {
-    display: none;
-  }
-  .footer_input input, .footer_input select {
-    width: 300px;
-  }
-  .rigth_container_footer_top_description textarea {
-    margin-top: 0.5rem;
-    width: 300px;
-  }
-}
 .navbar {
   width: 100%;
   background-color: #fefefd;

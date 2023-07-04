@@ -16,7 +16,7 @@ const Bande = ({position}) => {
         <div className="lef_container_top">
             <div className="lef_container_top_lib">TOTAL : </div>               
             <div className="lef_container_top_total">{facture+" "+devise}</div>
-            <span className="material-symbols-outlined">shopping_cart</span>            
+            <span className="lef_container_top_icon material-symbols-outlined">shopping_cart</span>            
         </div>);
 
     const bottom_band = (

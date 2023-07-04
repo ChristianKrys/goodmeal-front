@@ -70,39 +70,7 @@
 
 
 
-//------ Media Queries--------
-@media screen and (max-width:1250px) {
-    //----- Container -------
-    .lef_container{
-        width: 100%;    
-    }
-    .rigth_container{
-        width: 100%;
-    }
 
-
-    //-------- Navbar -----------
-    .navbar_login{
-        margin-left: 0.5rem;
-        justify-content: space-between;
-        width: 100%;
-    }
-    .navbar_login_btn_admin_image,.navbar_login_connexion{margin: 0.3rem!important;}
-
-    //-------- Display_menu --------
-    #ajouter3,#modifier3,#lister3{display: none;}
-
-
-    //------- Footer ------------
-    .footer_input{
-        input,select{width: 300px;}
-    }
-    .rigth_container_footer_top_description textarea{
-        margin-top: 0.5rem;
-        width: 300px;
-    }
-    
-}
 
 
 
